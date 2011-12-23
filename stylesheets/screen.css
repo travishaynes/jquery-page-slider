@@ -205,7 +205,7 @@ h2 {
 #main #doc {
   padding: 10px 25px 1px 50px;
   overflow: auto;
-  max-width: 450px;
+  max-width: 500px;
 }
 /* line 107, ../sass/screen.sass */
 #main #doc .default {
@@ -253,12 +253,13 @@ h2 {
   border: 1px solid #dddddd;
   font-size: 0.9em;
   padding: 5px 10px;
+  overflow: auto;
 }
-/* line 133, ../sass/screen.sass */
+/* line 134, ../sass/screen.sass */
 #main #doc ul > li p {
   margin: 16px;
 }
-/* line 135, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 #main #doc ul > li h3 {
   line-height: 2em;
 }

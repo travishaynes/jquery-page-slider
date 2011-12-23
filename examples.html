@@ -39,6 +39,33 @@
       <div id="main">
         <div id="doc">
           <h1>Examples</h1>
+          <h2>Setting up a page slider:</h2>
+          <pre>
+&lt;<span class="k">script</span> <span class="nv">type</span>=<span class="s1">"text/javascript"</span>&gt;
+  $(document).ready(<span class="k">function</span>(){<span class="c">
+    // Ensure that we do not initialize the slider
+    // more than once, since this code executes
+    // on every page that slides in.</span>
+    <span class="k">if</span>(<span class="o">!</span>window.slider){<span class="c">
+      // Create the slider</span>
+      <span class="k">var</span> <span class="nv">slider</span> = <span class="k">new</span> PageSlider();<span class="c">
+      // Bind to the click events of the
+      // data-remote anchors on the page</span>
+      slider.bindTo(<span class="s1">"a[data-remote=true]"</span>, <span class="s1">"click"</span>);
+    }
+  });
+&lt;<span class="k">/script</span>&gt;</pre>
+          <h2>Using custom options:</h2>
+          <pre>
+<span class="k">var</span> <span class="nv">slider</span> = <span class="k">new</span> PageSlider({
+  el        : <span class="s1">"#content"</span>,
+  easing    : <span class="s1">"swing"</span>,
+  duration  : <span class="mi">1200</span>,
+  tagCurrent: <span class="kc">false</span>
+});</pre>
+          <h2>Binding to events:</h2>
+          <pre><span class="c">// Bind to the mouseup events of button classes</span>
+slider.bindTo(<span class="s1">".button"</span>, <span class="s1">"mouseup"</span>);</pre>
         </div>
       </div>
     </div>
