@@ -47,8 +47,7 @@ Here are the inline CSS rules for the divs:
 Documentation
 =============
 
-* [Main Documentation](http://travishaynes.github.com/jquery-page-slider)
-* [Inline Code Documentation](http://travishaynes.github.com/jquery-page-slider/inline-doc.html)
+* [Online Documentation](http://travishaynes.github.com/jquery-page-slider)
 
 Thy inline documentation is built with [docco](http://jashkenas.github.com/docco/)
 and can be rebuilt by running `cake docs`.
