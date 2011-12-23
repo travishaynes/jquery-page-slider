@@ -5,7 +5,7 @@
 @import compass/css3/text-shadow
 
 $header-height: 40px
-$left-nav-width: 0
+$left-nav-width: 225px
 
 html
   overflow: none
@@ -47,6 +47,31 @@ a
     text-decoration: none
     margin-left: 15px
 
+#left-nav
+  +box-shadow(0 10px 20px #777)
+  border-right: 1px solid #ccc
+  position: fixed
+  left: 0
+  top: $header-height
+  bottom: 0
+  width: $left-nav-width
+  background: #eeeeff
+  overflow-y: auto
+  z-index: 99
+  
+  line-height: 1.25em
+  
+  a
+    font-size: 14px
+  
+  & > ul
+    margin: 25px
+    & > li
+      margin-bottom: 10px
+      & > ol
+        margin-left: 30px
+        list-style-type: circle
+
 #main, #main .section
   position: fixed
   left: $left-nav-width
@@ -55,6 +80,7 @@ a
   bottom: 0
 
 #main
+  overflow: auto
   .section
     +text-shadow(1px 1px 1px #f0f0fa)
     display: none

@@ -124,40 +124,79 @@ a:hover {
 }
 
 /* line 50, ../sass/screen.sass */
-#main, #main .section {
+#left-nav {
+  -moz-box-shadow: 0 10px 20px #777777;
+  -webkit-box-shadow: 0 10px 20px #777777;
+  -o-box-shadow: 0 10px 20px #777777;
+  box-shadow: 0 10px 20px #777777;
+  border-right: 1px solid #cccccc;
   position: fixed;
   left: 0;
+  top: 40px;
+  bottom: 0;
+  width: 225px;
+  background: #eeeeff;
+  overflow-y: auto;
+  z-index: 99;
+  line-height: 1.25em;
+}
+/* line 64, ../sass/screen.sass */
+#left-nav a {
+  font-size: 14px;
+}
+/* line 67, ../sass/screen.sass */
+#left-nav > ul {
+  margin: 25px;
+}
+/* line 69, ../sass/screen.sass */
+#left-nav > ul > li {
+  margin-bottom: 10px;
+}
+/* line 71, ../sass/screen.sass */
+#left-nav > ul > li > ol {
+  margin-left: 30px;
+  list-style-type: circle;
+}
+
+/* line 75, ../sass/screen.sass */
+#main, #main .section {
+  position: fixed;
+  left: 225px;
   top: 40px;
   right: 0;
   bottom: 0;
 }
 
-/* line 58, ../sass/screen.sass */
+/* line 82, ../sass/screen.sass */
+#main {
+  overflow: auto;
+}
+/* line 84, ../sass/screen.sass */
 #main .section {
   text-shadow: 1px 1px 1px #f0f0fa;
   display: none;
   padding: 25px;
   overflow: auto;
 }
-/* line 63, ../sass/screen.sass */
+/* line 89, ../sass/screen.sass */
 #main .section h1 {
   font-size: 24px;
 }
-/* line 65, ../sass/screen.sass */
+/* line 91, ../sass/screen.sass */
 #main .section h2 {
   margin-top: 2em;
 }
-/* line 67, ../sass/screen.sass */
+/* line 93, ../sass/screen.sass */
 #main .section h1, #main .section h2 {
   font-weight: bold;
   margin-bottom: 0.75em;
 }
-/* line 70, ../sass/screen.sass */
+/* line 96, ../sass/screen.sass */
 #main .section p {
   line-height: 1.4em;
   margin-bottom: 0.75em;
 }
-/* line 73, ../sass/screen.sass */
+/* line 99, ../sass/screen.sass */
 #main .section pre, #main .section p code, #main .section ul > li > h3 {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -172,7 +211,7 @@ a:hover {
   border: 1px solid #dddddd;
   padding: 1px 5px;
 }
-/* line 81, ../sass/screen.sass */
+/* line 107, ../sass/screen.sass */
 #main .section pre {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -185,11 +224,11 @@ a:hover {
   padding: 5px 10px;
   font-size: 0.9em;
 }
-/* line 88, ../sass/screen.sass */
+/* line 114, ../sass/screen.sass */
 #main .section ul > li p {
   margin: 16px;
 }
-/* line 90, ../sass/screen.sass */
+/* line 116, ../sass/screen.sass */
 #main .section ul > li h3 {
   line-height: 2em;
 }
