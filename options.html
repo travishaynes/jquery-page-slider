@@ -39,6 +39,53 @@
       <div id="main">
         <div id="doc">
           <h1>Options</h1>
+          <p>
+            When creating a new PageSlider you can pass a hash of options, or
+            update them as properties after the slider has been created.
+          </p>
+          <h2>el</h2>
+          <span class="default">Default: <span class="s1">"#main"</span></span>
+          <p>
+            All your pages should have a common DOM element that contains the
+            main content. <span class="nv">el</span> describes the jQuery
+            selector for that element.
+          </p>
+          <h2>easing</h2>
+          <span class="default">Default: <span class="s1">"linear"</span></span>
+          <p>
+            A string indicating which easing function to use for the page
+            slide transition. An easing function specifies the speed at which
+            the animation progresses at different points within the animation.
+          </p>
+          <p>
+            The only easing implementations in this library are the jQuery
+            defaults called <span class="s1">"swing"</span>, and one that
+            progresses at a constant pace, called
+            <span class="s1">"linear"</span>.
+            More easing functions are available with the use of plug-ins, most
+            notably the
+            <a href="http://jqueryui.com/" target="_blank">jQuery UI</a> suite.
+          </p>
+          <h2>duration</h2>
+          <span class="default">Default: <span class="s1">"fast"</span></span>
+          <p>
+            A string or number determining how long the animation will run.
+          </p>
+          <p>
+            Duration is in milliseconds; higher values indicate a slower page
+            slide transition, not a faster one. The strings
+            <span class="s1">"fast"</span> and <span class="s1">"slow"</span>
+            can be supplied to indicate durations of <span class="mi">200</span>
+            and <span class="mi">600</span> milliseconds, respectively.
+          </p>
+          <h2>tagCurrent</h2>
+          <span class="default">Default: <span class="kc">true</span></span>
+          <p>
+            When set to <span class="kc">true</span> any anchor on the page that
+            contains the current <code>location.pathname</code> will be tagged
+            with a <span class="s1">"current"</span> class so you can style out
+            the links for the current visible page.
+          </p>
         </div>
       </div>
     </div>

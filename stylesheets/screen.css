@@ -190,34 +190,32 @@ h1, h2, h3, h4, h5, h6 {
 /* line 94, ../sass/screen.sass */
 #main #doc {
   padding: 10px 25px 1px 50px;
-}
-/* line 96, ../sass/screen.sass */
-#main .section {
-  text-shadow: 1px 1px 1px #f0f0fa;
-  display: none;
-  padding: 25px;
   overflow: auto;
+  max-width: 450px;
 }
-/* line 101, ../sass/screen.sass */
-#main .section h1 {
-  font-size: 24px;
+/* line 98, ../sass/screen.sass */
+#main #doc .default {
+  font-size: 0.75em;
+  top: -10px;
+  position: relative;
+  color: #555555;
 }
 /* line 103, ../sass/screen.sass */
-#main .section h2 {
+#main #doc h2 {
   margin-top: 2em;
-}
-/* line 105, ../sass/screen.sass */
-#main .section h1, #main .section h2 {
   font-weight: bold;
+}
+/* line 106, ../sass/screen.sass */
+#main #doc h1, #main #doc h2 {
   margin-bottom: 0.75em;
 }
 /* line 108, ../sass/screen.sass */
-#main .section p {
+#main #doc p {
   line-height: 1.4em;
   margin-bottom: 0.75em;
 }
 /* line 111, ../sass/screen.sass */
-#main .section pre, #main .section p code, #main .section ul > li > h3 {
+#main #doc pre, #main #doc p code, #main #doc ul > li > h3 {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   -o-border-radius: 3px;
@@ -232,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1px 5px;
 }
 /* line 119, ../sass/screen.sass */
-#main .section pre {
+#main #doc pre {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   -o-border-radius: 0;
@@ -245,10 +243,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9em;
 }
 /* line 126, ../sass/screen.sass */
-#main .section ul > li p {
+#main #doc ul > li p {
   margin: 16px;
 }
 /* line 128, ../sass/screen.sass */
-#main .section ul > li h3 {
+#main #doc ul > li h3 {
   line-height: 2em;
 }
