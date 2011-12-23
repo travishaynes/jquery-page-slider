@@ -48,9 +48,9 @@ Documentation
 =============
 
 * [Main Documentation](http://travishaynes.github.com/jquery-page-slider)
-* [Inline Code Documentation](http://travishaynes.github.com/jquery-page-slider.html)
+* [Inline Code Documentation](http://travishaynes.github.com/jquery-page-slider/inline-doc.html)
 
-The inline documentation is built with [docco](http://jashkenas.github.com/docco/)
+Thy inline documentation is built with [docco](http://jashkenas.github.com/docco/)
 and can be rebuilt by running `cake docs`.
 
 
