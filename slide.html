@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>jQuery Page Slider Documentation</title>
+    <title>JavaScript</title>
     <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="./stylesheets/docco.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="./stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -24,14 +24,14 @@
       </div>
       <div id="left-nav">
         <ul>
-          <li><a data-remote="true" class="current" href="./">About</a></li>
+          <li><a data-remote="true" href="./">About</a></li>
           <li><a data-remote="true" href="./inline-doc.html">Inline Documentation</a></li>
           <li>
             Usage
             <ol>
               <li><a data-remote="true" href="./options.html">Options</a></li>
               <li><a data-remote="true" href="./bindings.html">Bindings</a></li>
-              <li><a data-remote="true" href="./slide.html">Sliding Content</a></li>
+              <li><a data-remote="true" class="current" href="./slide.html">Sliding Content</a></li>
               <li><a data-remote="true" href="./css.html">CSS</a></li>
               <li><a data-remote="true" href="./js.html">JavaScript</a></li>
             </ol>
@@ -40,21 +40,21 @@
       </div>
       <div id="main">
         <div id="doc">
-          <h1>jQuery Page Slider</h1>
+          <h1>Sliding Content</h1>
+          <h2><span class="nv">slide</span> <span class="nf">(page)</span></h2>
           <p>
-            <b>jQuery Page Slider</b> is a small
-            (~<span class="mi">2</span><span class="k">k</span>)
-            library that adds page sliding transitions to a website, using AJAX
-            to dynamically load the content for the next page instead of having
-            to refresh the entire document on every transition.
+            Additional to loading the content via AJAX calls using the href of
+            an anchor, you can also slide your own content into view by making
+            a call to <code>slider.slide(page);</code> where 
+            <span class="nf">page</span> is a hash containing these required
+            attributes:
           </p>
-          <p>
-            When the user has a modern browser that is compatible with the
-            <a href="http://www.w3.org/TR/html5/history.html">HTML5 history API</a>,
-            the page sliding transition works when the user clicks the browser's
-            back / forward buttons, making the site function more like a web
-            application than a website.
-          </p>
+          <pre><span class="k">var</span> page = {
+  href    : <span class="s1">"/example.html"</span>,
+  title   : <span class="s1">"Example Page"</span>,
+  content : <span class="s1">"&lt;p&gt;The HTML to slide into view.&lt;/p&gt;"</span>
+}</pre>
+          <p></p>
         </div>
       </div>
     </div>
