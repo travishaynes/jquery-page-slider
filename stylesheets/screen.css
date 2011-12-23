@@ -72,20 +72,30 @@ html {
 body {
   background: #fafaf0;
   color: #404040;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
 }
 
-/* line 18, ../sass/screen.sass */
+/* line 19, ../sass/screen.sass */
 a {
   text-decoration: none;
   color: #0069d6;
 }
-/* line 21, ../sass/screen.sass */
+/* line 22, ../sass/screen.sass */
 a:hover {
   text-decoration: underline;
 }
 
 /* line 25, ../sass/screen.sass */
+p {
+  margin: 0 0 15px 0;
+}
+
+/* line 28, ../sass/screen.sass */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px 0 15px 0;
+}
+
+/* line 32, ../sass/screen.sass */
 #forkme > img {
   z-index: 101;
   position: absolute;
@@ -94,7 +104,7 @@ a:hover {
   border: 0;
 }
 
-/* line 32, ../sass/screen.sass */
+/* line 39, ../sass/screen.sass */
 #header {
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
@@ -114,7 +124,7 @@ a:hover {
   height: 40px;
   z-index: 100;
 }
-/* line 43, ../sass/screen.sass */
+/* line 50, ../sass/screen.sass */
 #header .logo {
   line-height: 40px;
   font-size: 16pt;
@@ -123,7 +133,7 @@ a:hover {
   margin-left: 15px;
 }
 
-/* line 50, ../sass/screen.sass */
+/* line 57, ../sass/screen.sass */
 #left-nav {
   -moz-box-shadow: 0 10px 20px #777777;
   -webkit-box-shadow: 0 10px 20px #777777;
@@ -140,25 +150,25 @@ a:hover {
   z-index: 99;
   line-height: 1.25em;
 }
-/* line 64, ../sass/screen.sass */
+/* line 71, ../sass/screen.sass */
 #left-nav a {
   font-size: 14px;
 }
-/* line 67, ../sass/screen.sass */
+/* line 74, ../sass/screen.sass */
 #left-nav > ul {
   margin: 25px;
 }
-/* line 69, ../sass/screen.sass */
+/* line 76, ../sass/screen.sass */
 #left-nav > ul > li {
   margin-bottom: 10px;
 }
-/* line 71, ../sass/screen.sass */
+/* line 78, ../sass/screen.sass */
 #left-nav > ul > li > ol {
   margin-left: 30px;
   list-style-type: circle;
 }
 
-/* line 75, ../sass/screen.sass */
+/* line 82, ../sass/screen.sass */
 #main, #main .section {
   position: fixed;
   left: 225px;
@@ -167,36 +177,37 @@ a:hover {
   bottom: 0;
 }
 
-/* line 82, ../sass/screen.sass */
+/* line 89, ../sass/screen.sass */
 #main {
   overflow: auto;
+  margin-left: 25px;
 }
-/* line 84, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 #main .section {
   text-shadow: 1px 1px 1px #f0f0fa;
   display: none;
   padding: 25px;
   overflow: auto;
 }
-/* line 89, ../sass/screen.sass */
+/* line 97, ../sass/screen.sass */
 #main .section h1 {
   font-size: 24px;
 }
-/* line 91, ../sass/screen.sass */
+/* line 99, ../sass/screen.sass */
 #main .section h2 {
   margin-top: 2em;
 }
-/* line 93, ../sass/screen.sass */
+/* line 101, ../sass/screen.sass */
 #main .section h1, #main .section h2 {
   font-weight: bold;
   margin-bottom: 0.75em;
 }
-/* line 96, ../sass/screen.sass */
+/* line 104, ../sass/screen.sass */
 #main .section p {
   line-height: 1.4em;
   margin-bottom: 0.75em;
 }
-/* line 99, ../sass/screen.sass */
+/* line 107, ../sass/screen.sass */
 #main .section pre, #main .section p code, #main .section ul > li > h3 {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -211,7 +222,7 @@ a:hover {
   border: 1px solid #dddddd;
   padding: 1px 5px;
 }
-/* line 107, ../sass/screen.sass */
+/* line 115, ../sass/screen.sass */
 #main .section pre {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -224,11 +235,11 @@ a:hover {
   padding: 5px 10px;
   font-size: 0.9em;
 }
-/* line 114, ../sass/screen.sass */
+/* line 122, ../sass/screen.sass */
 #main .section ul > li p {
   margin: 16px;
 }
-/* line 116, ../sass/screen.sass */
+/* line 124, ../sass/screen.sass */
 #main .section ul > li h3 {
   line-height: 2em;
 }

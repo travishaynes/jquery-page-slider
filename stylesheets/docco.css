@@ -1,335 +1,419 @@
 /* line 1, ../sass/docco.sass */
+hr {
+  border: none;
+  border-top: 1px dashed #cccccc;
+}
+
+/* line 5, ../sass/docco.sass */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px 0 15px 0;
+}
+
+/* line 8, ../sass/docco.sass */
+h1 {
+  font-size: 2em;
+  margin-top: 40px;
+}
+
+/* line 13, ../sass/docco.sass */
+.pilwrap {
+  position: relative;
+}
+
+/* line 16, ../sass/docco.sass */
+.pilcrow {
+  font: 12px Arial;
+  text-decoration: none;
+  color: #454545;
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  padding: 1px 2px;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s linear;
+}
+
+/* line 27, ../sass/docco.sass */
+table td {
+  border: 0;
+  outline: 0;
+}
+
+/* line 31, ../sass/docco.sass */
+td.docs, th.docs {
+  max-width: 450px;
+  min-width: 450px;
+  min-height: 5px;
+  padding: 10px 25px 1px 50px;
+  overflow-x: hidden;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* line 41, ../sass/docco.sass */
+.docs pre {
+  margin: 15px 0 15px;
+  padding-left: 15px;
+}
+/* line 44, ../sass/docco.sass */
+.docs p tt, .docs p code {
+  background: #f8f8ff;
+  border: 1px solid #dedede;
+  font-size: 12px;
+  padding: 0 0.2em;
+}
+
+/* line 50, ../sass/docco.sass */
+td.code, th.code {
+  padding: 14px 15px 16px 25px;
+  width: 100%;
+  vertical-align: top;
+  background: #f5f5ff;
+  border-left: 1px solid #e5e5ee;
+}
+
+/* line 57, ../sass/docco.sass */
+pre, tt, code {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* Syntax Highlighting */
+/* line 66, ../sass/docco.sass */
 td.linenos {
   background-color: #f0f0f0;
   padding-right: 10px;
 }
 
-/* line 4, ../sass/docco.sass */
+/* line 69, ../sass/docco.sass */
 span.lineno {
   background-color: #f0f0f0;
   padding: 0 5px 0 5px;
 }
 
-/* line 7, ../sass/docco.sass */
+/* line 72, ../sass/docco.sass */
 .hll {
   background-color: #ffffcc;
 }
 
-/* line 9, ../sass/docco.sass */
+/* line 74, ../sass/docco.sass */
 .c {
   color: #408080;
   font-style: italic;
 }
 
-/* line 12, ../sass/docco.sass */
+/* line 77, ../sass/docco.sass */
 .err {
   border: 1px solid red;
 }
 
-/* line 14, ../sass/docco.sass */
+/* line 79, ../sass/docco.sass */
 .k {
   color: #954121;
 }
 
-/* line 16, ../sass/docco.sass */
+/* line 81, ../sass/docco.sass */
 .o {
   color: #666666;
 }
 
-/* line 18, ../sass/docco.sass */
+/* line 83, ../sass/docco.sass */
 .cm {
   color: #408080;
   font-style: italic;
 }
 
-/* line 21, ../sass/docco.sass */
+/* line 86, ../sass/docco.sass */
 .cp {
   color: #bc7a00;
 }
 
-/* line 23, ../sass/docco.sass */
+/* line 88, ../sass/docco.sass */
 .c1 {
   color: #408080;
   font-style: italic;
 }
 
-/* line 26, ../sass/docco.sass */
+/* line 91, ../sass/docco.sass */
 .cs {
   color: #408080;
   font-style: italic;
 }
 
-/* line 29, ../sass/docco.sass */
+/* line 94, ../sass/docco.sass */
 .gd {
   color: #a00000;
 }
 
-/* line 31, ../sass/docco.sass */
+/* line 96, ../sass/docco.sass */
 .ge {
   font-style: italic;
 }
 
-/* line 33, ../sass/docco.sass */
+/* line 98, ../sass/docco.sass */
 .gr {
   color: red;
 }
 
-/* line 35, ../sass/docco.sass */
+/* line 100, ../sass/docco.sass */
 .gh {
   color: navy;
   font-weight: bold;
 }
 
-/* line 38, ../sass/docco.sass */
+/* line 103, ../sass/docco.sass */
 .gi {
   color: #00a000;
 }
 
-/* line 40, ../sass/docco.sass */
+/* line 105, ../sass/docco.sass */
 .go {
   color: gray;
 }
 
-/* line 42, ../sass/docco.sass */
+/* line 107, ../sass/docco.sass */
 .gp {
   color: navy;
   font-weight: bold;
 }
 
-/* line 45, ../sass/docco.sass */
+/* line 110, ../sass/docco.sass */
 .gs {
   font-weight: bold;
 }
 
-/* line 47, ../sass/docco.sass */
+/* line 112, ../sass/docco.sass */
 .gu {
   color: purple;
   font-weight: bold;
 }
 
-/* line 50, ../sass/docco.sass */
+/* line 115, ../sass/docco.sass */
 .gt {
   color: #0040d0;
 }
 
-/* line 52, ../sass/docco.sass */
+/* line 117, ../sass/docco.sass */
 .kc {
   color: #954121;
 }
 
-/* line 54, ../sass/docco.sass */
+/* line 119, ../sass/docco.sass */
 .kd {
   color: #954121;
   font-weight: bold;
 }
 
-/* line 57, ../sass/docco.sass */
+/* line 122, ../sass/docco.sass */
 .kn {
   color: #954121;
   font-weight: bold;
 }
 
-/* line 60, ../sass/docco.sass */
+/* line 125, ../sass/docco.sass */
 .kp {
   color: #954121;
 }
 
-/* line 62, ../sass/docco.sass */
+/* line 127, ../sass/docco.sass */
 .kr {
   color: #954121;
   font-weight: bold;
 }
 
-/* line 65, ../sass/docco.sass */
+/* line 130, ../sass/docco.sass */
 .kt {
   color: #b00040;
 }
 
-/* line 67, ../sass/docco.sass */
+/* line 132, ../sass/docco.sass */
 .m {
   color: #666666;
 }
 
-/* line 69, ../sass/docco.sass */
+/* line 134, ../sass/docco.sass */
 .s {
   color: #219161;
 }
 
-/* line 71, ../sass/docco.sass */
+/* line 136, ../sass/docco.sass */
 .na {
   color: #7d9029;
 }
 
-/* line 73, ../sass/docco.sass */
+/* line 138, ../sass/docco.sass */
 .nb {
   color: #954121;
 }
 
-/* line 75, ../sass/docco.sass */
+/* line 140, ../sass/docco.sass */
 .nc {
   color: blue;
   font-weight: bold;
 }
 
-/* line 78, ../sass/docco.sass */
+/* line 143, ../sass/docco.sass */
 .no {
   color: #880000;
 }
 
-/* line 80, ../sass/docco.sass */
+/* line 145, ../sass/docco.sass */
 .nd {
   color: #aa22ff;
 }
 
-/* line 82, ../sass/docco.sass */
+/* line 147, ../sass/docco.sass */
 .ni {
   color: #999999;
   font-weight: bold;
 }
 
-/* line 85, ../sass/docco.sass */
+/* line 150, ../sass/docco.sass */
 .ne {
   color: #d2413a;
   font-weight: bold;
 }
 
-/* line 88, ../sass/docco.sass */
+/* line 153, ../sass/docco.sass */
 .nf {
   color: blue;
 }
 
-/* line 90, ../sass/docco.sass */
+/* line 155, ../sass/docco.sass */
 .nl {
   color: #a0a000;
 }
 
-/* line 92, ../sass/docco.sass */
+/* line 157, ../sass/docco.sass */
 .nn {
   color: blue;
   font-weight: bold;
 }
 
-/* line 95, ../sass/docco.sass */
+/* line 160, ../sass/docco.sass */
 .nt {
   color: #954121;
   font-weight: bold;
 }
 
-/* line 98, ../sass/docco.sass */
+/* line 163, ../sass/docco.sass */
 .nv {
   color: #19469d;
 }
 
-/* line 100, ../sass/docco.sass */
+/* line 165, ../sass/docco.sass */
 .ow {
   color: #aa22ff;
   font-weight: bold;
 }
 
-/* line 103, ../sass/docco.sass */
+/* line 168, ../sass/docco.sass */
 .w {
   color: #bbbbbb;
 }
 
-/* line 105, ../sass/docco.sass */
+/* line 170, ../sass/docco.sass */
 .mf {
   color: #666666;
 }
 
-/* line 107, ../sass/docco.sass */
+/* line 172, ../sass/docco.sass */
 .mh {
   color: #666666;
 }
 
-/* line 109, ../sass/docco.sass */
+/* line 174, ../sass/docco.sass */
 .mi {
   color: #666666;
 }
 
-/* line 111, ../sass/docco.sass */
+/* line 176, ../sass/docco.sass */
 .mo {
   color: #666666;
 }
 
-/* line 113, ../sass/docco.sass */
+/* line 178, ../sass/docco.sass */
 .sb {
   color: #219161;
 }
 
-/* line 115, ../sass/docco.sass */
+/* line 180, ../sass/docco.sass */
 .sc {
   color: #219161;
 }
 
-/* line 117, ../sass/docco.sass */
+/* line 182, ../sass/docco.sass */
 .sd {
   color: #219161;
   font-style: italic;
 }
 
-/* line 120, ../sass/docco.sass */
+/* line 185, ../sass/docco.sass */
 .s2 {
   color: #219161;
 }
 
-/* line 122, ../sass/docco.sass */
+/* line 187, ../sass/docco.sass */
 .se {
   color: #bb6622;
   font-weight: bold;
 }
 
-/* line 125, ../sass/docco.sass */
+/* line 190, ../sass/docco.sass */
 .sh {
   color: #219161;
 }
 
-/* line 127, ../sass/docco.sass */
+/* line 192, ../sass/docco.sass */
 .si {
   color: #bb6688;
   font-weight: bold;
 }
 
-/* line 130, ../sass/docco.sass */
+/* line 195, ../sass/docco.sass */
 .sx {
   color: #954121;
 }
 
-/* line 132, ../sass/docco.sass */
+/* line 197, ../sass/docco.sass */
 .sr {
   color: #bb6688;
 }
 
-/* line 134, ../sass/docco.sass */
+/* line 199, ../sass/docco.sass */
 .s1 {
   color: #219161;
 }
 
-/* line 136, ../sass/docco.sass */
+/* line 201, ../sass/docco.sass */
 .ss {
   color: #19469d;
 }
 
-/* line 138, ../sass/docco.sass */
+/* line 203, ../sass/docco.sass */
 .bp {
   color: #954121;
 }
 
-/* line 140, ../sass/docco.sass */
+/* line 205, ../sass/docco.sass */
 .vc {
   color: #19469d;
 }
 
-/* line 142, ../sass/docco.sass */
+/* line 207, ../sass/docco.sass */
 .vg {
   color: #19469d;
 }
 
-/* line 144, ../sass/docco.sass */
+/* line 209, ../sass/docco.sass */
 .vi {
   color: #19469d;
 }
 
-/* line 146, ../sass/docco.sass */
+/* line 211, ../sass/docco.sass */
 .il {
   color: #666666;
 }

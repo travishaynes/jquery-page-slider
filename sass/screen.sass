@@ -13,13 +13,20 @@ html
 body
   background: #fafaf0
   color: #404040
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif
+  //font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 
 a
   text-decoration: none
   color: #0069D6
   &:hover
     text-decoration: underline
+
+p
+  margin: 0 0 15px 0
+
+h1, h2, h3, h4, h5, h6
+  margin: 0px 0 15px 0
 
 #forkme
   & > img
@@ -81,6 +88,7 @@ a
 
 #main
   overflow: auto
+  margin-left: 25px
   .section
     +text-shadow(1px 1px 1px #f0f0fa)
     display: none
