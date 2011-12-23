@@ -1,0 +1,195 @@
+/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p180@rails31rc/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../.rvm/gems/ruby-1.9.2-p180@rails31rc/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p180@rails31rc/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p180@rails31rc/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.9.2-p180@rails31rc/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.9.2-p180@rails31rc/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../.rvm/gems/ruby-1.9.2-p180@rails31rc/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.9.2-p180@rails31rc/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../.rvm/gems/ruby-1.9.2-p180@rails31rc/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/screen.sass */
+html {
+  overflow: none;
+}
+
+/* line 13, ../sass/screen.sass */
+body {
+  background: #fafaf0;
+  color: #404040;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 18, ../sass/screen.sass */
+a {
+  text-decoration: none;
+  color: #0069d6;
+}
+/* line 21, ../sass/screen.sass */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 25, ../sass/screen.sass */
+#forkme > img {
+  z-index: 101;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+/* line 32, ../sass/screen.sass */
+#header {
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #222222));
+  background-image: -webkit-linear-gradient(top, #333333, #222222);
+  background-image: -moz-linear-gradient(top, #333333, #222222);
+  background-image: -o-linear-gradient(top, #333333, #222222);
+  background-image: -ms-linear-gradient(top, #333333, #222222);
+  background-image: linear-gradient(top, #333333, #222222);
+  background-color: #222222;
+  background-repeat: repeat-x;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 40px;
+  z-index: 100;
+}
+/* line 43, ../sass/screen.sass */
+#header .logo {
+  line-height: 40px;
+  font-size: 16pt;
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+/* line 50, ../sass/screen.sass */
+#main, #main .section {
+  position: fixed;
+  left: 0;
+  top: 40px;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 58, ../sass/screen.sass */
+#main .section {
+  text-shadow: 1px 1px 1px #f0f0fa;
+  display: none;
+  padding: 25px;
+  overflow: auto;
+}
+/* line 63, ../sass/screen.sass */
+#main .section h1 {
+  font-size: 24px;
+}
+/* line 65, ../sass/screen.sass */
+#main .section h2 {
+  margin-top: 2em;
+}
+/* line 67, ../sass/screen.sass */
+#main .section h1, #main .section h2 {
+  font-weight: bold;
+  margin-bottom: 0.75em;
+}
+/* line 70, ../sass/screen.sass */
+#main .section p {
+  line-height: 1.4em;
+  margin-bottom: 0.75em;
+}
+/* line 73, ../sass/screen.sass */
+#main .section pre, #main .section p code, #main .section ul > li > h3 {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: none;
+  font: 100% "Courier New", "Andale Mono", monospace;
+  font-weight: inherit;
+  background-color: #f0f0ff;
+  border: 1px solid #dddddd;
+  padding: 1px 5px;
+}
+/* line 81, ../sass/screen.sass */
+#main .section pre {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  background: #f7f7ff;
+  margin: 25px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
+/* line 88, ../sass/screen.sass */
+#main .section ul > li p {
+  margin: 16px;
+}
+/* line 90, ../sass/screen.sass */
+#main .section ul > li h3 {
+  line-height: 2em;
+}
