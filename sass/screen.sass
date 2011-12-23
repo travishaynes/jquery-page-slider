@@ -70,7 +70,9 @@ h1, h2, h3, h4, h5, h6
   
   a
     font-size: 14px
-  
+    &.current
+      text-decoration: underline
+      cursor: default
   & > ul
     margin: 25px
     & > li
@@ -87,8 +89,10 @@ h1, h2, h3, h4, h5, h6
   bottom: 0
 
 #main
-  overflow: auto
-  margin-left: 25px
+  overflow: hidden
+  overflow-y: auto
+  #doc
+    padding: 10px 25px 1px 50px
   .section
     +text-shadow(1px 1px 1px #f0f0fa)
     display: none
