@@ -92,10 +92,24 @@ p {
 
 /* line 28, ../sass/screen.sass */
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
   margin: 0px 0 15px 0;
+  color: #555555;
+  font-style: italic;
+  font-weight: normal;
 }
 
-/* line 32, ../sass/screen.sass */
+/* line 35, ../sass/screen.sass */
+h1 {
+  text-shadow: 2px 2px 2px #cccccc;
+}
+
+/* line 37, ../sass/screen.sass */
+h2 {
+  text-shadow: 1px 1px 2px #cccccc;
+}
+
+/* line 41, ../sass/screen.sass */
 #forkme > img {
   z-index: 101;
   position: absolute;
@@ -104,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 0;
 }
 
-/* line 39, ../sass/screen.sass */
+/* line 48, ../sass/screen.sass */
 #header {
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
@@ -124,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   z-index: 100;
 }
-/* line 50, ../sass/screen.sass */
+/* line 59, ../sass/screen.sass */
 #header .logo {
   line-height: 40px;
   font-size: 16pt;
@@ -133,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 15px;
 }
 
-/* line 57, ../sass/screen.sass */
+/* line 66, ../sass/screen.sass */
 #left-nav {
   -moz-box-shadow: 0 10px 20px #777777;
   -webkit-box-shadow: 0 10px 20px #777777;
@@ -150,30 +164,30 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   line-height: 1.25em;
 }
-/* line 71, ../sass/screen.sass */
+/* line 80, ../sass/screen.sass */
 #left-nav a {
   font-size: 14px;
 }
-/* line 73, ../sass/screen.sass */
+/* line 82, ../sass/screen.sass */
 #left-nav a.current {
   text-decoration: underline;
   cursor: default;
 }
-/* line 76, ../sass/screen.sass */
+/* line 85, ../sass/screen.sass */
 #left-nav > ul {
   margin: 25px;
 }
-/* line 78, ../sass/screen.sass */
+/* line 87, ../sass/screen.sass */
 #left-nav > ul > li {
   margin-bottom: 10px;
 }
-/* line 80, ../sass/screen.sass */
+/* line 89, ../sass/screen.sass */
 #left-nav > ul > li > ol {
   margin-left: 30px;
   list-style-type: circle;
 }
 
-/* line 84, ../sass/screen.sass */
+/* line 93, ../sass/screen.sass */
 #main, #main .section {
   position: fixed;
   left: 225px;
@@ -182,54 +196,52 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
 }
 
-/* line 91, ../sass/screen.sass */
+/* line 100, ../sass/screen.sass */
 #main {
   overflow: hidden;
   overflow-y: auto;
 }
-/* line 94, ../sass/screen.sass */
+/* line 103, ../sass/screen.sass */
 #main #doc {
   padding: 10px 25px 1px 50px;
   overflow: auto;
   max-width: 450px;
 }
-/* line 98, ../sass/screen.sass */
+/* line 107, ../sass/screen.sass */
 #main #doc .default {
   font-size: 0.75em;
   top: -10px;
   position: relative;
   color: #555555;
 }
-/* line 103, ../sass/screen.sass */
+/* line 112, ../sass/screen.sass */
 #main #doc h2 {
   margin-top: 2em;
   font-weight: bold;
 }
-/* line 106, ../sass/screen.sass */
+/* line 115, ../sass/screen.sass */
 #main #doc h1, #main #doc h2 {
   margin-bottom: 0.75em;
 }
-/* line 108, ../sass/screen.sass */
+/* line 117, ../sass/screen.sass */
 #main #doc p {
   line-height: 1.4em;
   margin-bottom: 0.75em;
 }
-/* line 111, ../sass/screen.sass */
+/* line 120, ../sass/screen.sass */
 #main #doc pre, #main #doc p code, #main #doc ul > li > h3 {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
   text-shadow: none;
   font: 100% "Courier New", "Andale Mono", monospace;
   font-weight: inherit;
-  background-color: #f0f0ff;
-  border: 1px solid #dddddd;
-  padding: 1px 5px;
+  background-color: #eeeeee;
 }
-/* line 119, ../sass/screen.sass */
+/* line 126, ../sass/screen.sass */
 #main #doc pre {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -238,14 +250,15 @@ h1, h2, h3, h4, h5, h6 {
   -khtml-border-radius: 4px;
   border-radius: 4px;
   background: #f7f7ff;
-  padding: 5px 10px;
+  border: 1px solid #dddddd;
   font-size: 0.9em;
+  padding: 5px 10px;
 }
-/* line 125, ../sass/screen.sass */
+/* line 133, ../sass/screen.sass */
 #main #doc ul > li p {
   margin: 16px;
 }
-/* line 127, ../sass/screen.sass */
+/* line 135, ../sass/screen.sass */
 #main #doc ul > li h3 {
   line-height: 2em;
 }

@@ -26,7 +26,16 @@ p
   margin: 0 0 15px 0
 
 h1, h2, h3, h4, h5, h6
+  font-family: "Trebuchet MS", Verdana, Helvetica, Arial,sans-serif
   margin: 0px 0 15px 0
+  color: #555
+  font-style: italic
+  font-weight: normal
+
+h1
+  +text-shadow(2px 2px 2px #ccc)
+h2
+  +text-shadow(1px 1px 2px #ccc)
 
 #forkme
   & > img
@@ -109,18 +118,17 @@ h1, h2, h3, h4, h5, h6
       line-height: 1.4em
       margin-bottom: 0.75em
     pre, p code, ul > li > h3
-      +border-radius(3px)
+      +border-radius(0px)
       +text-shadow(none)
       font: 100% "Courier New", "Andale Mono", monospace
       font-weight: inherit
-      background-color: #f0f0ff
-      border: 1px solid #ddd
-      padding: 1px 5px
+      background-color: #eee
     pre
       +border-radius(4px)
       background: #f7f7ff
-      padding: 5px 10px
+      border: 1px solid #ddd
       font-size: 0.9em
+      padding: 5px 10px
     ul > li
       p
         margin: 16px
