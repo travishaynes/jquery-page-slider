@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 40px;
+  background: silver;
+}
+
+#header ul, #header ul li {
+  list-style-type: none;
+  float: left;
+  margin-right: 15px;
+}
+
+#main {
+  position: fixed;
+  left: 0;
+  top: 40px;
+  right: 0;
+  bottom: 0;
+}
+
+a.current {
+  background: white;
+}

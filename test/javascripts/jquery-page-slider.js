@@ -1,0 +1,1 @@
+../../lib/jquery-page-slider.js
