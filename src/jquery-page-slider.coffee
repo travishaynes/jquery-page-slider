@@ -15,6 +15,13 @@ class window.PageSlider
   bindTo: (el, event) ->
     pageSlider = this
     $(el).live event, (e) ->
+      # make the pages semi-transparent during the transition
+      $("#next-page")
+        .animate(opacity: 0.25)
+      $("#current-page")
+        .animate(opacity: 0.25)
+        .addClass("loading")
+      
       # prevent the anchor's default action
       e.preventDefault()
       
@@ -117,24 +124,36 @@ class window.PageSlider
     # replace the document's title with the page's title
     document.title = page.title
     
-    # slide the current page out of view
-    $("#current-page").stop().animate {left: "-100%"},
-      easing  : @easing
-      duration: @duration
-      complete: ->
-        # make this the next page, and empty its contents
-        $(this).html("").attr("id", "next-page").css left: "100%"
-        
-        # one less slide to go
-        pageSlider.sliding -= 1
+    # current page transition
+    $("#current-page")
+      # stop any queued animations
+      .stop()
+      # remove the loading class
+      .removeClass("loading")
+      # slide out of view
+      .animate {left: "-100%"},
+        easing  : @easing
+        duration: @duration
+        complete: ->
+          # make this the next page, and empty its contents
+          $(this).html("").attr("id", "next-page").css left: "100%"
+          
+          # one less slide to go
+          pageSlider.sliding -= 1
     
-    # slide the next page into view
-    $("#next-page").stop().html(page.content).animate {left: "0%"},
-      easing  : @easing
-      duration: @duration
-      complete: ->
-        # make this the current page
-        $(this).attr "id", "current-page"
-        
-        # one less slide to go
-        pageSlider.sliding -= 1
+    # next page transition
+    $("#next-page")
+      # stop any queued animations
+      .stop()
+      # replace the page content
+      .html(page.content)
+      # slide into view
+      .animate {left: "0%", opacity: 1.0},
+        easing  : @easing
+        duration: @duration
+        complete: ->
+          # make this the current page
+          $(this).attr "id", "current-page"
+          
+          # one less slide to go
+          pageSlider.sliding -= 1
