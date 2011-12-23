@@ -41,7 +41,7 @@
           <h1>Bindings</h1>
           <p>
             After you set up your new PageSlider, you will need to bind it to
-            some anchors to actually trigger all the page-sliding magic.
+            some anchors to actually trigger the page-sliding magic.
           </p>
           <h2><span class="nv">bindTo</span> <span class="nf">(el, event)</span></h2>
           <p>
@@ -53,6 +53,11 @@
             usually a <span class="s1">"click"</span> event.
           </p>
           <h2>Example:</h2>
+          <p>
+            Bind to the <span class="nv">click</span> events of any anchors
+            with a <span class="nv">data-remote</span> attribute set to
+            <span class="kc">true</span>.
+          </p>
           <pre>
 &lt;<span class="k">script</span> <span class="nv">type</span>=<span class="s1">"text/javascript"</span>&gt;
     <span class="k">var</span> <span class="nv">slider</span> = <span class="k">new</span> PageSlider();
