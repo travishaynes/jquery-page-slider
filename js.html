@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bindings</title>
+    <title>JavaScript</title>
     <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="./stylesheets/docco.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="./stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -31,14 +31,26 @@
             <ol>
               <li><a data-remote="true" href="./options.html">Options</a></li>
               <li><a data-remote="true" href="./bindings.html">Bindings</a></li>
-              <li><a data-remote="true" class="current" href="./examples.html">Examples</a></li>
+              <li><a data-remote="true" href="./css.html">CSS</a></li>
+              <li><a data-remote="true" class="current" href="./js.html">JavaScript</a></li>
             </ol>
           </li>
         </ul>
       </div>
       <div id="main">
         <div id="doc">
-          <h1>Examples</h1>
+          <h1>JavaScript</h1>
+          <h2>Loading the library:</h2>
+          <p>
+            jQuery-page-slider depends on jQuery >= 1.7 to function. jQuery UI
+            can be optionally added to use additional easing transitions.
+          </p>
+          <h3>Dependencies</h3>
+          <pre>&lt;<span class="k">script</span> <span class="nv">src</span>=<span class="s1">"//code.jquery.com/jquery-latest.min.js"</span> <span class="nv">type</span>=<span class="s1">"text/javascript"<span>&gt;&lt;<span class="k">/script</span>&gt;
+&lt;<span class="k">script</span> <span class="nv">src</span>=<span class="s1">"//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"</span> <span class="nv">type</span>=<span class="s1">"text/javascript"<span>&gt;&lt;<span class="k">/script</span>&gt;</pre>
+          <p></p>
+          <h3>Using the latest source from github:</h3>
+          <pre>&lt;<span class="k">script</span> <span class="nv">src</span>=<span class="s1">"https://raw.github.com/travishaynes/jquery-page-slider/master/lib/jquery-page-slider.min.js"</span> <span class="nv">type</span>=<span class="s1">"text/javascript"<span>&gt;&lt;<span class="k">/script</span>&gt;</pre>
           <h2>Setting up a page slider:</h2>
           <pre>
 &lt;<span class="k">script</span> <span class="nv">type</span>=<span class="s1">"text/javascript"</span>&gt;
@@ -48,7 +60,7 @@
     // on every page that slides in.</span>
     <span class="k">if</span>(<span class="o">!</span>window.slider){<span class="c">
       // Create the slider</span>
-      <span class="k">var</span> <span class="nv">slider</span> = <span class="k">new</span> PageSlider();<span class="c">
+      window.slider</span> = <span class="k">new</span> PageSlider();<span class="c">
       // Bind to the click events of the
       // data-remote anchors on the page</span>
       slider.bindTo(<span class="s1">"a[data-remote=true]"</span>, <span class="s1">"click"</span>);

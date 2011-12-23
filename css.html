@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS</title>
+    <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="./stylesheets/docco.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="./stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    
+    <!--[if IE]>
+      <link href="./stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://raw.github.com/travishaynes/jquery-page-slider/master/lib/jquery-page-slider.js" type="text/javascript" ></script>
+    <script src="./javascripts/docs.js" type="text/javascript" ></script>
+  </head>
+  <body>
+    <a id="forkme" href="http://github.com/travishaynes/jquery-page-slider">
+      <img src="./images/forkme.png"/>
+    </a>
+    <div id="page">
+      <div id="header">
+        <a class="logo" href="./">jquery-page-slider</a>
+      </div>
+      <div id="left-nav">
+        <ul>
+          <li><a data-remote="true" href="./">About</a></li>
+          <li><a data-remote="true" href="./inline-doc.html">Inline Documentation</a></li>
+          <li>
+            Usage
+            <ol>
+              <li><a data-remote="true" href="./options.html">Options</a></li>
+              <li><a data-remote="true" href="./bindings.html">Bindings</a></li>
+              <li><a data-remote="true" class="current" href="./css.html">CSS</a></li>
+              <li><a data-remote="true" href="./js.html">JavaScript</a></li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+      <div id="main">
+        <div id="doc">
+          <h1>CSS</h1>
+          <p>
+          The page transitions depend on CSS styling to function properly. The
+          sliding transition works by animating a <code>#current-page</code> div
+          from <span class="s1">"left: 0%"</span> to
+          <span class="s1">left: -100%"</span>, at the same time as animating a
+          <code>#next-page</code> div from <span class="s1">"left: 100%"</span>
+          to <span class="s1">"left: 0%"</span>.
+          </p>
+          <p>
+          For convenience, the <code>#current-page</code> and
+          <code>#next-page</code> divs are automatically inserted into the
+          document when you create a new instance of PageSlider. Here are their
+          inline CSS rules:
+          </p>
+          <pre>#current-page {
+  <span class="k">position</span>: <span class="nv">absolute;</span>
+  <span class="k">left</span>    : <span class="nv">0;</span>
+  <span class="k">top</span>     : <span class="nv">0;</span>
+  <span class="k">width</span>   : <span class="nv">100%;</span>
+}
+#next-page {
+  <span class="k">position</span>: <span class="nv">absolute;</span>
+  <span class="k">left</span>    : <span class="nv">100%;</span>
+  <span class="k">top</span>     : <span class="nv">0;</span>
+  <span class="k">width</span>   : <span class="nv">100%;</span>
+}</pre>
+          <p></p>
+          <p>
+            You will want to make sure that the parent element described in
+            <code>slider.el</code> has a
+            <code><span class="k">overflow</span>: <span class="nv">hidden</span>;</code>
+            rule to prevent the page from appearing outside of the view pane,
+            and the browser's scroll bars from appearing, allowing the user to
+            scroll the <code>#next-page</code> div into focus.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
