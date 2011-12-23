@@ -39,6 +39,25 @@
       <div id="main">
         <div id="doc">
           <h1>Bindings</h1>
+          <p>
+            After you set up your new PageSlider, you will need to bind it to
+            some anchors to actually trigger all the page-sliding magic.
+          </p>
+          <h2><span class="nv">bindTo</span> <span class="nf">(el, event)</span></h2>
+          <p>
+            The element that <span class="nf">el</span> describes must be an
+            anchor with an <span class="nf">href</span> attribute present.
+          </p>
+          <p>
+            <span class="nf">event</span> is the event to bind to, which is
+            usually a <span class="s1">"click"</span> event.
+          </p>
+          <h2>Example:</h2>
+          <pre>
+&lt;<span class="k">script</span> <span class="nv">type</span>=<span class="s1">"text/javascript"</span>&gt;
+    <span class="k">var</span> <span class="nv">slider</span> = <span class="k">new</span> PageSlider();
+    slider.bindTo(<span class="s1">"a[data-remote=true]"</span>, <span class="s1">"click"</span>);
+&lt;<span class="k">/script</span>&gt;</pre>
         </div>
       </div>
     </div>

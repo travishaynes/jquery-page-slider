@@ -231,22 +231,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 119, ../sass/screen.sass */
 #main #doc pre {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  -khtml-border-radius: 0;
-  border-radius: 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
   background: #f7f7ff;
-  margin: 25px;
   padding: 5px 10px;
   font-size: 0.9em;
 }
-/* line 126, ../sass/screen.sass */
+/* line 125, ../sass/screen.sass */
 #main #doc ul > li p {
   margin: 16px;
 }
-/* line 128, ../sass/screen.sass */
+/* line 127, ../sass/screen.sass */
 #main #doc ul > li h3 {
   line-height: 2em;
 }
