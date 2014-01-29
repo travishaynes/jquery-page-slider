@@ -14,7 +14,7 @@ class window.PageSlider
   # binds to the given event of an element (el must have a href property)
   bindTo: (el, event) ->
     pageSlider = this
-    $(el).live event, (e) ->
+    $(el).on event, (e) ->
       # make the pages semi-transparent during the transition
       $("#next-page")
         .animate(opacity: 0.25)
